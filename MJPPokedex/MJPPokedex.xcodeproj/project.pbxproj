@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		18C54034249D11320055EEDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54033249D11320055EEDF /* AppDelegate.m */; };
 		18C54037249D11320055EEDF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54036249D11320055EEDF /* SceneDelegate.m */; };
-		18C5403A249D11320055EEDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54039249D11320055EEDF /* ViewController.m */; };
 		18C5403D249D11320055EEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C5403B249D11320055EEDF /* Main.storyboard */; };
 		18C5403F249D11340055EEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C5403E249D11340055EEDF /* Assets.xcassets */; };
 		18C54042249D11340055EEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C54040249D11340055EEDF /* LaunchScreen.storyboard */; };
 		18C54045249D11340055EEDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54044249D11340055EEDF /* main.m */; };
 		18C54053249D11DA0055EEDF /* MJPPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54052249D11DA0055EEDF /* MJPPokemon.m */; };
 		18C54059249D19440055EEDF /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C54058249D19440055EEDF /* PokemonController.swift */; };
+		18C5405C249D1EEF0055EEDF /* MJPPokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5405B249D1EEF0055EEDF /* MJPPokemonTableViewController.m */; };
+		18C5405F249D21720055EEDF /* MJPPokemonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5405E249D21720055EEDF /* MJPPokemonDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,6 @@
 		18C54033249D11320055EEDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18C54035249D11320055EEDF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		18C54036249D11320055EEDF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		18C54038249D11320055EEDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18C54039249D11320055EEDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18C5403C249D11320055EEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18C5403E249D11340055EEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C54041249D11340055EEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +34,10 @@
 		18C54052249D11DA0055EEDF /* MJPPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPPokemon.m; sourceTree = "<group>"; };
 		18C54057249D19440055EEDF /* MJPPokedex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJPPokedex-Bridging-Header.h"; sourceTree = "<group>"; };
 		18C54058249D19440055EEDF /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
+		18C5405A249D1EEF0055EEDF /* MJPPokemonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPPokemonTableViewController.h; sourceTree = "<group>"; };
+		18C5405B249D1EEF0055EEDF /* MJPPokemonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPPokemonTableViewController.m; sourceTree = "<group>"; };
+		18C5405D249D21720055EEDF /* MJPPokemonDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPPokemonDetailViewController.h; sourceTree = "<group>"; };
+		18C5405E249D21720055EEDF /* MJPPokemonDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPPokemonDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +100,10 @@
 		18C5404E249D11630055EEDF /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18C54038249D11320055EEDF /* ViewController.h */,
-				18C54039249D11320055EEDF /* ViewController.m */,
+				18C5405A249D1EEF0055EEDF /* MJPPokemonTableViewController.h */,
+				18C5405B249D1EEF0055EEDF /* MJPPokemonTableViewController.m */,
+				18C5405D249D21720055EEDF /* MJPPokemonDetailViewController.h */,
+				18C5405E249D21720055EEDF /* MJPPokemonDetailViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -198,11 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C54053249D11DA0055EEDF /* MJPPokemon.m in Sources */,
-				18C5403A249D11320055EEDF /* ViewController.m in Sources */,
+				18C5405C249D1EEF0055EEDF /* MJPPokemonTableViewController.m in Sources */,
 				18C54034249D11320055EEDF /* AppDelegate.m in Sources */,
 				18C54045249D11340055EEDF /* main.m in Sources */,
 				18C54037249D11320055EEDF /* SceneDelegate.m in Sources */,
 				18C54059249D19440055EEDF /* PokemonController.swift in Sources */,
+				18C5405F249D21720055EEDF /* MJPPokemonDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
