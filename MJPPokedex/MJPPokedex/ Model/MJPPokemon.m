@@ -26,7 +26,7 @@
     NSString *name = dictionary[@"name"];
 
     // identifier
-    NSString *identifier = dictionary[@"id"];
+    NSNumber *identifier = dictionary[@"id"];
 
     // abilities
     NSMutableArray *abilities = [[NSMutableArray alloc] init];
