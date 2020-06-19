@@ -7,6 +7,7 @@
 //
 
 #import "MJPPokemonTableViewController.h"
+#import "MJPPokedex-Swift.h"
 
 @interface MJPPokemonTableViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [[MJPPokemonController sharedController] fetchAllPokemonWithCompletion:^(NSArray<MJPPokemon *> * allPokemon, NSError * error) {
+    [[MJPPokemonController sharedController]
+
+     fetchAllPokemonWithCompletion:^(NSArray<MJPPokemon *> * allPokemon, NSError * error) {
         self.allPokemon = allPokemon;
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
@@ -31,7 +34,6 @@
     return self.allPokemon.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PokemonCell" forIndexPath:indexPath];
     MJPPokemon *pokemon = self.allPokemon[indexPath.row];
@@ -39,14 +41,18 @@
     return cell;
 }
 
-/*
+
  #pragma mark - Navigation
 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     if ([segue.identifier isEqualToString:@"DetailSegue"]) {
+         MJPPokemonDetailViewController *detailVC = segue.destinationViewController;
+         NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+         MJPPokemon *pokemon = self.allPokemon[indexPath.row];
+         detailVC.pokemon = pokemon;
+         [[MJPPokemonController sharedController] fillInDetailsFor:pokemon];
+     }
  }
- */
+
 
 @end

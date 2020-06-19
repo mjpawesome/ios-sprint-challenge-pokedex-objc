@@ -56,7 +56,8 @@ class PokemonController: NSObject {
                 return
             }
             do {
-                guard let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { throw NSError() }
+                guard let jsonDictionary =
+                    try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { throw NSError() }
                 let detailPokemon = MJPPokemon(dictionary: jsonDictionary)
                 pokemon.name = detailPokemon.name
                 pokemon.sprite = detailPokemon.sprite

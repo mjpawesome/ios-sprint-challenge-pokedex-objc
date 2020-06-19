@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MJPPokemon.h"
-#import "MJPPokedex-Swift.h"
+
 #import "MJPPokemonDetailViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
