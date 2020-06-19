@@ -22,7 +22,7 @@ you don't need to retain punctuationSet.
 		if (count) {
 			wordFrequency[word] = [NSNumber numberWithInteger:count.integerValue + 1];
 		} else {
-			wordFrequency[word] = [[NSNumber alloc] initWithInteger:1];
+			wordFrequency[word] = [[[NSNumber alloc] initWithInteger:1] autorelease];
 		}
 	}
 
